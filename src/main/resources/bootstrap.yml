@@ -4,4 +4,6 @@ spring:
     name: dh-cuenta-service
   cloud:
     config:
-        url: ${CONFIG_SERVER:http://localhost:8888}
+        uri: http://localhost:8888
+  profiles:
+    active: dev
