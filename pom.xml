@@ -18,28 +18,44 @@
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
 	</properties>
 
-
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<!--		Permite que el microservicio se registre en el servidor de Eureka-->
+
+<!--		****************Permite que el microservicio se registre en el servidor de Eureka********-->
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
-<!--		actuator le avisa al servidor si esta disponible o no-->
+		<!--		actuator le avisa al servidor eureka si esta disponible o no-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+
+<!--		//***********************ServidorCentralizadoCliente********************//-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+<!--		//****************************************************************************//-->
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -62,5 +78,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
 
 </project>
