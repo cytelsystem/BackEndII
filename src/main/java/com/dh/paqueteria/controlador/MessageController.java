@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessageController {
 
-    @Value("${message}")
-    private String message;
+    private String message = "hola";
 
     @GetMapping("/message")
     public ResponseEntity<String> getMessage() {
+
         return ResponseEntity.ok(message);
     }
 
