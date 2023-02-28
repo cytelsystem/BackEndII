@@ -12,7 +12,7 @@ public class MessageController {
     private String message;
 
     @GetMapping("/message")
-    public ResponseEntity<String> getMessages() {
+    public ResponseEntity<String> getMessage() {
         return ResponseEntity.ok(message);
     }
 }
