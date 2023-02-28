@@ -1,10 +1,10 @@
-package com.dh.ServidorCentralizadoCliente;
+package com.dh.cuenta;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServidorCentralizadoClienteApplicationTests {
+class CuentaApplicationTests {
 
 	@Test
 	void contextLoads() {
