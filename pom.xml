@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.dh</groupId>
-	<artifactId>MicroservicioInicial</artifactId>
+	<artifactId>MicroservicioPaqueteria</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ClimaService</name>
-	<description>MicroservicioInicial</description>
+	<name>Paqueteria</name>
+	<description>MicroservicioPaqueteria</description>
 	<properties>
 		<java.version>18</java.version>
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
@@ -20,6 +20,7 @@
 
 
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
