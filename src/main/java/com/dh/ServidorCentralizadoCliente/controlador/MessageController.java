@@ -1,4 +1,4 @@
-package com.dh.ServidorCentralizadoCliente.controlador;
+package com.dh.cuenta.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -15,4 +15,5 @@ public class MessageController {
     public ResponseEntity<String> getMessage() {
         return ResponseEntity.ok(message);
     }
+
 }
