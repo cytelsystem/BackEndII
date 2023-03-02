@@ -1,6 +1,6 @@
-package com.dh.microservicioInicial.controlador;
+package com.dh.microservicioProveedores.controlador;
 
-import com.dh.microservicioInicial.service.microservicioInicialService;
+import com.dh.microservicioProveedores.service.microservicioProveedoresService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
-public class MicroservicioInicialController {
+public class MicroservicioProveedoresController {
 
     @Autowired
-    private microservicioInicialService servicedatos;
+    private microservicioProveedoresService servicedatos;
 
     @GetMapping
     public String microservicioFunciona() {
-        return "Este microservicio esta funcionando";
+        return "Microservicio de proveedores";
     }
 
     @GetMapping("/datos")
