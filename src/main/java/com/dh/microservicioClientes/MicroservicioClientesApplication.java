@@ -1,13 +1,13 @@
-package com.dh.microservicioProveedores;
+package com.dh.microservicioClientes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MicroservicioProveedoresApplication {
+public class MicroservicioClientesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroservicioProveedoresApplication.class, args);
+		SpringApplication.run(MicroservicioClientesApplication.class, args);
 	}
 
 }

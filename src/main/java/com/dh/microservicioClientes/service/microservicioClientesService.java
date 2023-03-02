@@ -1,9 +1,9 @@
-package com.dh.microservicioProveedores.service;
+package com.dh.microservicioClientes.service;
 
 import org.springframework.stereotype.Service;
 
 @Service
-public class microservicioProveedoresService {
+public class microservicioClientesService {
 
     private String nombreApellido;
     public String getNombres(String nombre, String apellido) {
