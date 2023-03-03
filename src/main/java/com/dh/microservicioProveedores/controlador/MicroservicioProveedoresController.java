@@ -32,7 +32,7 @@ public class MicroservicioProveedoresController {
         return "Hola como estas";
     }
 
-    @GetMapping("/subscription/find")
+    @GetMapping("/proveedores")
     public ResponseEntity<String> find() {
         return ResponseEntity.ok(port);
     }
