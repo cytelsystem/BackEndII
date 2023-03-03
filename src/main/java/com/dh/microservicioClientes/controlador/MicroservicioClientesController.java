@@ -15,7 +15,7 @@ public class MicroservicioClientesController {
     @Autowired
     private microservicioClientesService servicedatos;
     @Autowired
-    private ISubscriptionClient subscriptionClient;
+    private ISubscriptionClient proveedores;
 
     @GetMapping
     public String microservicioFunciona() {
@@ -31,9 +31,9 @@ public class MicroservicioClientesController {
         return "Hola como estas";
     }
 
-    @GetMapping("proveedores/find")
+    @GetMapping("/proveedores")
     public ResponseEntity<String> find() {
-        return ResponseEntity.ok(subscriptionClient.find());
+        return ResponseEntity.ok(proveedores.find());
     }
 
 }
