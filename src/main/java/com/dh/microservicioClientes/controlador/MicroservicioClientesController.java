@@ -26,14 +26,15 @@ public class MicroservicioClientesController {
     public String getdatos(@RequestParam String nombre, @RequestParam String apellido) {
         return servicedatos.getNombres(nombre, apellido);
     }
-    @GetMapping("/saludar")
-    public String getSaludar() {
-        return "Hola como estas saludo desde Cliente";
-    }
 
     @GetMapping("/proveedores")
     public ResponseEntity<String> find() {
         return ResponseEntity.ok(proveedores.find());
+    }
+
+    @GetMapping("/saludar")
+    public ResponseEntity<String> saludar(){
+        return ResponseEntity.ok(proveedores.getSaludar());
     }
 
 }
