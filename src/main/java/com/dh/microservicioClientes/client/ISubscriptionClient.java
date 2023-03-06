@@ -15,5 +15,7 @@ public interface ISubscriptionClient {
     @GetMapping("/proveedores")
     String find();
 
+    @GetMapping("/saludar")
+    String getSaludar();
 
 }

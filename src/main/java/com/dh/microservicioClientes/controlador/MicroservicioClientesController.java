@@ -28,7 +28,7 @@ public class MicroservicioClientesController {
     }
     @GetMapping("/saludar")
     public String getSaludar() {
-        return "Hola como estas";
+        return "Hola como estas saludo desde Cliente";
     }
 
     @GetMapping("/proveedores")
