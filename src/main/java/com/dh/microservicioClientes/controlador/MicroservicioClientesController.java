@@ -22,6 +22,10 @@ public class MicroservicioClientesController {
         return "Microservicio de proveedores";
     }
 
+    @GetMapping("/clientesSaludar")
+    public String getClientesSaludar() {
+        return "Hola yo soy microservicioClientes";
+    }
     @GetMapping("/datos")
     public String getdatos(@RequestParam String nombre, @RequestParam String apellido) {
         return servicedatos.getNombres(nombre, apellido);
