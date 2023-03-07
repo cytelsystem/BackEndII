@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservicioClientes
+    name: microservicioCliente
   cloud:
     config:
       uri: http://localhost:5000

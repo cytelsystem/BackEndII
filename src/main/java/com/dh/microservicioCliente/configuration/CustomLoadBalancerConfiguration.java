@@ -1,4 +1,4 @@
-package com.dh.microservicioClientes.configuration;
+package com.dh.microservicioCliente.configuration;
 
 
 import org.springframework.cloud.client.ServiceInstance;

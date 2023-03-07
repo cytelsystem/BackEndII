@@ -1,4 +1,4 @@
-package com.dh.microservicioClientes.service;
+package com.dh.microservicioCliente.service;
 
 import org.springframework.stereotype.Service;
 

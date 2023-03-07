@@ -1,7 +1,7 @@
-package com.dh.microservicioClientes.controlador;
+package com.dh.microservicioCliente.controlador;
 
-import com.dh.microservicioClientes.client.ISubscriptionClient;
-import com.dh.microservicioClientes.service.microservicioClientesService;
+import com.dh.microservicioCliente.client.ISubscriptionClient;
+import com.dh.microservicioCliente.service.microservicioClientesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
-public class MicroservicioClientesController {
+public class MicroservicioClienteController {
 
     @Autowired
     private microservicioClientesService servicedatos;
