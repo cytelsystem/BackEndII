@@ -22,7 +22,7 @@ public class MicroservicioClienteController {
         return "Microservicio de proveedores";
     }
 
-    @GetMapping("/clientesSaludar")
+    @GetMapping("/clienteSaludar")
     public String getClientesSaludar() {
         return "Hola yo soy microservicioClientes";
     }
@@ -30,7 +30,6 @@ public class MicroservicioClienteController {
     public String getdatos(@RequestParam String nombre, @RequestParam String apellido) {
         return servicedatos.getNombres(nombre, apellido);
     }
-
     @GetMapping("/proveedores")
     public ResponseEntity<String> find() {
         return ResponseEntity.ok(proveedores.find());
